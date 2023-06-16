@@ -294,8 +294,7 @@ docker <command> <sub-command> (options)
             You can have many containers running off the same image
         </li>
         <li>
-            Dockers default image "registry" is called Docker Hub
-            [hub.docker.com](https://hub.docker.com/)
+            Dockers default image "registry" is called Docker Hub <a href="https://hub.docker.com">hub.docker.com</a>
         </li>
     </ul>
 </ol>
