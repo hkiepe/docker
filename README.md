@@ -294,7 +294,7 @@ docker <command> <sub-command> (options)
             You can have many containers running off the same image
         </li>
         <li>
-            Dockers default image "registry" is called Docker Huib [(hub.docker.com)](https://hub.docker.com/)
+            Dockers default image "registry" is called Docker Huib [hub.docker.com](https://hub.docker.com/)
         </li>
     </ul>
 </ol>
