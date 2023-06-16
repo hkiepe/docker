@@ -258,6 +258,47 @@ Show current docker version on your machine
 docker version
 ```
 
+The command returns information about the docker client (cli) and the docker server (engine) which is running as a deamon/service on your machine. The cli is talking to the engine and then the cli returns the values whic it gots from the engine. Make sure you have the latest versions as possible installed.
+
+Show configuration information for the engine
+
+```sh
+docker info
+```
+
+Show a list of docker commands.
+
+```sh
+docker
+```
+
+At the top of the list you will see the management commands. So you can use the management command format.
+
+```sh
+docker <command> <sub-command> (options)
+```
+
+<!-- IMAGE VS CONTAINER -->
+
+### Difference between image and container
+
+<ol>
+    <ul>
+        <li>
+            An image is the application we want to run
+        </li>
+        <li>
+            A container ist the instance of that image running as a process
+        </li>
+        <li>
+            You can have many containers running off the same image
+        </li>
+        <li>
+            Dockers default image "registry" is called Docker Huib [(hub.docker.com)](https://hub.docker.com/)
+        </li>
+    </ul>
+</ol>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
