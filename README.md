@@ -170,6 +170,16 @@ What happens in "docker container run"?
     </li>
 </ol>
 
+<!-- CONTAINER VS VM -->
+
+#### Container vs VM
+
+Its just a process
+
+```sh
+docker top
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
