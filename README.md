@@ -180,6 +180,14 @@ Its just a process
 docker top
 ```
 
+Display the running processes of a container
+
+```sh
+ps aux
+```
+
+Shows the host proces
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
