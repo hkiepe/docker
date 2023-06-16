@@ -282,22 +282,20 @@ docker <command> <sub-command> (options)
 
 ### Difference between image and container
 
-<ol>
-    <ul>
-        <li>
-            An image is the application we want to run
-        </li>
-        <li>
-            A container ist the instance of that image running as a process
-        </li>
-        <li>
-            You can have many containers running off the same image
-        </li>
-        <li>
-            Dockers default image "registry" is called Docker Hub <a target="_blank" href="https://hub.docker.com">hub.docker.com</a>
-        </li>
-    </ul>
-</ol>
+<ul>
+    <li>
+        An image is the application we want to run
+    </li>
+    <li>
+        A container ist the instance of that image running as a process
+    </li>
+    <li>
+        You can have many containers running off the same image
+    </li>
+    <li>
+        Dockers default image "registry" is called Docker Hub <a target="_blank" href="https://hub.docker.com">hub.docker.com</a>
+    </li>
+</ul>
 
 <!-- RUN NGINX CONTAINER -->
 
