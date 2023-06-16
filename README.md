@@ -248,9 +248,13 @@ https://git.ssc-services.de/saltstack/salt-states/-/blob/master/swan-server/db2/
 
 <!-- RESTORE THE BACKUP -->
 
-## Restore the Backup
+## Use Docker
 
-[Link to onenote](onenote:https://sscservices.sharepoint.com/sites/SWANFMO/Freigegebene%20Dokumente/General/SWAN%20nextGen/DB%20Hardening.one#Wiederherstellung%20Prod%20DB&section-id=%7B522C7267-AC56-4961-A01B-F0C02DC395D6%7D&page-id=%7B0549E747-4FF1-4E85-A598-23A32CA05064%7D&end)
+Show current docker version on your machine
+
+```sh
+docker version
+```
 
 <!-- ROADMAP -->
 
