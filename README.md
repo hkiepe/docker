@@ -294,9 +294,87 @@ docker <command> <sub-command> (options)
             You can have many containers running off the same image
         </li>
         <li>
-            Dockers default image "registry" is called Docker Hub <a href="https://hub.docker.com">hub.docker.com</a>
+            Dockers default image "registry" is called Docker Hub <a target="_blank" href="https://hub.docker.com">hub.docker.com</a>
         </li>
     </ul>
+</ol>
+
+<!-- RUN NGINX CONTAINER -->
+
+### Run a nginx container
+
+```sh
+docker container run --publish 80:80 --detach --name webhost nginx
+```
+
+The docker engine looks for an image called nginx and downloads the latest nginx docker image from docker. Then it starts the image as a new process in a new container. The publish part exposes the local port 80 on the local machine and routes all traffic from it to the executable running inside that container on port 80 and since nginx is a webserver it serves the nginx startpage in my browser. "--detach" tells doker to run the container in the background. With option --detach we will get back the unique container id of our container. Every time you run a new container you will get a new container id. With "--name" you can specify a name for the container and it will not get a random one.
+
+```sh
+docker container ls
+```
+
+Lists all containers
+
+```sh
+docker container stop <container_id>
+```
+
+```sh
+docker container ls -a
+```
+
+Lists all containers also the ones which are stopped. Every time you execute "docker container run" the engine starts a "new" container with new id.
+
+```sh
+docker container stop <id_or_name>
+```
+
+Stops the specific container (you can also type the first few digits)
+
+```sh
+docker container logs <container_name>
+```
+
+Shows logs for a specific container.
+
+```sh
+docker container top <container_name>
+```
+
+Shows the process runniong inside the container.
+
+```sh
+docker container --help
+```
+
+Shows all possible commands we can try on the container.
+
+```sh
+docker container rm <container_id> <container_id> <container_id>
+docker container rm *
+```
+
+Removes all stopped containers specified or at the same time. You cant remove running containers - you should use "-f" option instead.
+
+<!-- WHAT HAPPENS WHEN WE RUN A CONTAINER -->
+
+### WHAT HAPPENS WHEN WE RUN A CONTAINER
+
+What happens in "docker container run"?
+
+<ol>
+    <li>
+        An image is the application we want to run
+    </li>
+    <li>
+        A container ist the instance of that image running as a process
+    </li>
+    <li>
+        You can have many containers running off the same image
+    </li>
+    <li>
+        Dockers default image "registry" is called Docker Hub <a target="_blank" href="https://hub.docker.com">hub.docker.com</a>
+    </li>
 </ol>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
