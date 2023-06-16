@@ -135,10 +135,13 @@ Shows all possible commands we can try on the container.
 
 ```sh
 docker container rm <container_id> <container_id> <container_id>
-docker container rm *
 ```
 
 Removes all stopped containers specified or at the same time. You cant remove running containers - you should use "-f" option instead.
+
+```sh
+docker container rm -f <container_id> <container_id> <container_id>
+```
 
 <!-- WHAT HAPPENS WHEN WE RUN THE NGINX CONTAINER -->
 
