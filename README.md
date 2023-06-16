@@ -244,11 +244,9 @@ Script file
 https://git.ssc-services.de/saltstack/salt-states/-/blob/master/swan-server/db2/files/DB2_backup.sh.jinja
 ```
 
-## DB2 Specific commands
-
-<!-- RESTORE THE BACKUP -->
-
 ## Use Docker
+
+<!-- USE DOCKER -->
 
 Show current docker version on your machine
 
