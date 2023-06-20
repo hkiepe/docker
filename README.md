@@ -34,6 +34,34 @@
 
 ### Installation
 
+```sh
+https://docs.docker.com/engine/install/ubuntu/
+```
+
+```sh
+https://docs.docker.com/config/daemon/start/
+```
+
+```sh
+https://docs.docker.com/engine/install/linux-postinstall/#configure-docker-to-start-on-boot-with-systemd
+```
+
+```sh
+https://askubuntu.com/questions/1379425/system-has-not-been-booted-with-systemd-as-init-system-pid-1-cant-operate
+```
+
+```sh
+sudo systemctl start docker
+```
+
+```sh
+sudo dockerd
+```
+
+```sh
+docker run hello-world
+```
+
 ## Use Docker
 
 <!-- USE DOCKER -->
