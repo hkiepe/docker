@@ -383,7 +383,7 @@ docker network create <network_name>
 Spans a new virtual network to attach containers to. If you dont specify a driver it creates the network with the "bridge" driver because thats the default driver. Its a simple driver that simply creates a virtual network locally with its own subnet arround the 172.17... A network driver is a built in or third party extension that give you virtual network features.
 
 ```sh
-docker container run -d --name <container_name> --network <network_name>
+docker container run -d --name <container_name> <container_image> --network <network_name>
 ```
 
 Creates a container in the specified network. But we dont have to start new containers. We can just plug in and unplug containers from netwroks.
