@@ -450,6 +450,25 @@ Shows a history of the image layers
 docker image history <image_name>
 ```
 
+The inspect command gives us all the meta details about the image.
+
+```sh
+docker image inspect <image_name>
+```
+
+Images are made up of file system changes and metadata.
+Each layer is uniquely identified and only stored once on a host.
+This saves storage space on host and transfer time on push/pull.
+A container is just a single read/write layer on top of an image.
+
+Images are defined by 3 informations. Username/Organization, Reposytory and the Tag.
+
+```sh
+docker image tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+```
+
+Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+
 <!-- ROADMAP -->
 
 ## Roadmap
