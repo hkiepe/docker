@@ -399,11 +399,56 @@ If you are running all the applications on a single server, you are able to real
 
 When you create a new network, the networks get automatically a new feature which is automatic DNS resolution for all the containers on that virtul network from all tzhe other containers on that virtual network using their container names. So if i create a new container on that same network, they are able to find each other regardless what the ip adress is, with their container names.
 
-<!-- DOCKER NETWORKING -->
-
-#### Docker networking
-
 Dont use ip adresses. Just DNS names because docker changes ip adresse dynamically. Docker deamon has a built in DNS server that container use by default. Docker defaults the hostname to the containers name but it can be changed by setting an alias.
+
+<!-- DOCKER IMAGES -->
+
+## Docker Images
+
+Application binaries and dependcies for the app and the metadata on how to run the image.
+
+Official Definition: "An image is an ordered collection of root filesystem changes and the correspecding execution parameters for use within a container runtime."
+
+Its not a complete OS inside. No kernel or kernel modules like drivers. Its really just the binaries which the application needs because the host provides the kernel. That makes it different from a virtual machine. Cause its not booting up a full operating system - its starting just an application. So the image can be really small. It can be a single file (golang for example). Or it can be a very big image like ubuntu.
+
+pull an imgae
+
+```sh
+docker pull <image_name>
+```
+
+Show downloaded images
+
+```sh
+docker image ls
+```
+
+The versioning in docker means for example:
+
+<ul>
+    <li>
+        ngnx -> donwloads the current stable image
+    </li>
+    <li>
+        ngnx:1 -> donwloads the latest image ngnx 1 - EG 1.10
+    </li>
+    <li>
+        ngnx:1.1 -> donwloads the current stable image 1.1 - EG 1.1.9
+    </li>
+    <li>
+        ASO
+    </li>
+</ul>
+
+<!-- IMAGE LAYERS -->
+
+## Image Layers
+
+Shows a history of the image layers
+
+```sh
+docker image history <image_name>
+```
 
 <!-- ROADMAP -->
 
