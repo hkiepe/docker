@@ -469,6 +469,46 @@ docker image tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 
 Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
 
+```sh
+docker image push <image_name>
+```
+
+pushes the image to the docker hub
+
+<!-- DOCKERFILES -->
+
+## Dockerfiles
+
+```sh
+docker image build <image_name>
+```
+
+builds an image form a dockerfile
+
+<!-- PERSISTENT DATA -->
+
+## Persistent Data
+
+Containers are usually immutable and ephermeral
+
+Docker container ls shows us all the volumes
+
+```sh
+docker container ls
+```
+
+see details about the volume
+
+```sh
+docker volume inspect <volume_name>
+```
+
+-v option specifies either a "new" volume we want to create or it allows us to create a "named volume" eg -v mysql-db:/var/lib/mysql.
+
+```sh
+docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v /var/lib/mysql mysql
+```
+
 <!-- ROADMAP -->
 
 ## Roadmap
